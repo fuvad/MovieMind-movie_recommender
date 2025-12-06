@@ -34,4 +34,31 @@ The app integrates external APIs, databases, and machine learning into a single 
 
 ## 🧩 Architecture Flow
 1. **Fetch Movies** – `fetch_movies.py` retrieves data from TMDB API.  
-2. **Save to Database** –
+2. **Save to Database** – data stored using SQLAlchemy and Supabase PostgreSQL.  
+3. **Build Model** – `recommender.py` computes similarity between movies.  
+4. **Run App** – `app.py` (Streamlit) displays recommendations interactively.
+
+---
+
+## 📊 Example Workflow
+1. User selects number of pages to load (e.g., 5 pages = 100 movies).  
+2. The app checks if the movies exist in the database.  
+3. If not, it fetches new ones and saves them.  
+4. A similarity model is built and cached.  
+5. User searches for a movie → app shows similar ones instantly.
+
+---
+
+## 💡 Future Enhancements
+- Add hybrid (content + collaborative) recommendations  
+- Include poster previews and TMDB links  
+- Deploy with a shared online database for real-time access  
+
+---
+
+## 🧰 Setup Instructions
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/<your-username>/movie-recommendation.git
+cd movie-recommendation
