@@ -62,3 +62,20 @@ The app integrates external APIs, databases, and machine learning into a single 
 ```bash
 git clone https://github.com/<your-username>/movie-recommendation.git
 cd movie-recommendation
+```
+
+### 2️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Add Environment Variables
+- Follow the .env.example format
+
+### 4️⃣ Run the App
+```
+streamlit run app.py
+```
+
+## 🖼️ Screenshots
+<img width="825" height="829" alt="image" src="https://github.com/user-attachments/assets/3f3a7205-3fb2-4214-84c4-5b7a76906f70" />
