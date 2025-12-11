@@ -61,7 +61,7 @@ The app integrates external APIs, databases, and machine learning into a single 
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/movie-recommendation.git
+git clone https://github.com/fuvad/MovieMind-movie_recommender.git
 cd movie-recommendation
 ```
 
